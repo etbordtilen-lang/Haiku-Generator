@@ -3,51 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Candal&family=Caveat:wght@400..700&family=Gabarito:wght@400..900&family=Liu+Jian+Mao+Cao&family=Shadows+Into+Light&family=Sixtyfour&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Haiku Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Haiku Generator</h1>
-    </header>
+    <div class="generator-container">
+      <header>
+        <h1>AI Haiku Generator</h1>
+      </header>
 
-    <main>
-      <form id="haiku-form">
-        <input
-          id="topic-input"
-          type="text"
-          placeholder="Enter a topic for your haiku"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <button type="submit">Generate Haiku</button>
-      </form>
-      <div id="haiku-output">
-        <!-- Generated haiku will be displayed here -->
-        <br />
-        <!-- Generated haiku will be displayed here -->
-        <br />
-        <!-- Generated haiku will be displayed here -->
-        <br />
-      </div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/etbordtilen-lang" target="_blank"
-        >M Sey-Nielsen</a
-      >
-      and is open sourced on
-      <a
-        href="https://github.com/etbordtilen-lang/Haiku-Generator"
-        target="blank"
-        >Github</a
-      >
-      and is hosted on
-      <a href="https://ai-japanese-haiku-generator.netlify.app/" target="_blank"
-        >Netlify.</a
-      >
-    </footer>
+      <main>
+        <form class="haiku-form">
+          <input
+            class="topic-input"
+            type="text"
+            placeholder="Enter a topic for your haiku"
+            autofocus
+            required
+            autocomplete="off"
+          />
+          <button class="generate-button" type="submit">Generate Haiku</button>
+        </form>
+        <div class="haiku-output">
+          <!-- Generated haiku will be displayed here -->
+          <br />
+          <!-- Generated haiku will be displayed here -->
+          <br />
+          <!-- Generated haiku will be displayed here -->
+          <br />
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/etbordtilen-lang" target="_blank"
+          >M Sey-Nielsen</a
+        >
+        and is open sourced on
+        <a
+          href="https://github.com/etbordtilen-lang/Haiku-Generator"
+          target="blank"
+          >Github</a
+        >
+        and is hosted on
+        <a
+          href="https://ai-japanese-haiku-generator.netlify.app/"
+          target="_blank"
+          >Netlify.</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
