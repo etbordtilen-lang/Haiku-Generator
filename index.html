@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Candal&family=Caveat:wght@400..700&family=Gabarito:wght@400..900&family=Liu+Jian+Mao+Cao&family=Shadows+Into+Light&family=Sixtyfour&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Haiku Generator</title>
   </head>
@@ -19,7 +20,7 @@
       </header>
 
       <main>
-        <form class="haiku-form">
+        <form class="haiku-form" id="haiku-generator-form">
           <input
             class="topic-input"
             type="text"
@@ -30,13 +31,12 @@
           />
           <button class="generate-button" type="submit">Generate Haiku</button>
         </form>
-        <div class="haiku-output">
+        <div class="haiku-output" id="haiku-output">
           <!-- Generated haiku will be displayed here -->
           <br />
           <!-- Generated haiku will be displayed here -->
           <br />
           <!-- Generated haiku will be displayed here -->
-          <br />
         </div>
       </main>
       <footer>
