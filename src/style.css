@@ -1,11 +1,18 @@
 body {
-  background-color: #fee8d4;
+  background-image: url("images/Mt.Fuji.jpg");
+  background-repeat: no-repeat;
+  background-position: center; /* Keeps the focus centered */
+  background-size: 100% 100%; /* Scales to fill the screen */
+  min-height: 100vh; /* Ensures it covers the full viewport height */
+  margin: 0; /* Removes default page margin */
+  opacity: 0.7;
 }
+
 a {
-  color: #b7895d;
+  color: #1c492f;
 }
 .generator-container {
-  margin: 120px auto;
+  margin: 60px auto;
   max-width: 400px;
 }
 .haiku-form {
@@ -14,18 +21,18 @@ a {
   gap: 15px;
 }
 .topic-input {
-  border: 1.5px solid #d4a373;
+  border: 1.5px solid #769fbf;
   border-radius: 8px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   font-size: 12px;
+  margin-top: 25px;
   padding: 10px;
 }
 .generate-button {
-  background-color: #d4a373;
-  border: none;
+  background-color: #769fbf;
+  border: 0.5px solid #afcbe1;
   border-radius: 8px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-
   color: white;
   font-size: 16px;
   margin: 30px 80px 0;
@@ -37,22 +44,27 @@ h1 {
   font-style: normal;
   font-weight: bold;
   text-align: center;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
 .haiku-output {
-  background-color: #fff0e6;
-  border: 1.5px solid #d4a373;
+  background-color: #f4f7f9;
+  border: 1.5px solid #769fbf;
   border-radius: 8px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-  color: rgb(from black r g b / 0.3);
+  color: rgb(from black r g b / 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: "Liu Jian Mao Cao", cursive;
   font-size: 24px;
+  height: 180px;
   line-height: 2;
-  margin-top: 40px;
-  padding: 50px;
+  margin-top: 30px;
+  padding: 10px;
   text-align: center;
 }
 footer {
   font-size: 14px;
-  margin-top: 40px;
+  margin-top: 70px;
   text-align: center;
 }
