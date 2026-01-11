@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Candal&family=Caveat:wght@400..700&family=Gabarito:wght@400..900&family=Liu+Jian+Mao+Cao&family=Shadows+Into+Light&family=Sixtyfour&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Haiku Generator</title>
@@ -23,6 +24,7 @@
         <form class="haiku-form" id="haiku-generator-form">
           <input
             class="topic-input"
+            id="user-topic-input"
             type="text"
             placeholder="Enter a topic for your haiku"
             autofocus
@@ -40,23 +42,25 @@
         </div>
       </main>
       <footer>
-        This project was coded by
-        <a href="https://github.com/etbordtilen-lang" target="_blank"
-          >M Sey-Nielsen</a
-        >
-        and is open sourced on
-        <a
-          href="https://github.com/etbordtilen-lang/Haiku-Generator"
-          target="blank"
-          >Github</a
-        >
-        and is hosted on
-        <a
-          href="https://ai-japanese-haiku-generator.netlify.app/"
-          target="_blank"
-          >Netlify.</a
-        >
-      </footer>
+        <strong
+          >This project was coded by
+          <a href="https://github.com/etbordtilen-lang" target="_blank"
+            >M Sey-Nielsen</a
+          >
+          and is open sourced on
+          <a
+            href="https://github.com/etbordtilen-lang/Haiku-Generator"
+            target="blank"
+            >Github</a
+          >
+          and is hosted on
+          <a
+            href="https://ai-japanese-haiku-generator.netlify.app/"
+            target="_blank"
+            >Netlify.</a
+          ></strong
+        ></footer>
+      </div>
     </div>
     <script src="src/index.js"></script>
   </body>
